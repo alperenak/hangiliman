@@ -5,14 +5,14 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Home from "./components/home/home"
+import Index from "./components/index"
 
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={Home} exact={true} />
+        <Route path="/" component={Index} exact={true} />
       </Switch>
     </Router>
   )
