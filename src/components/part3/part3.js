@@ -1,6 +1,6 @@
 import React from "react"
 import Bacground from "../../assets/images/part3.png"
-import Captain from "../../assets/svg/captain.svg"
+import Captain from "../../assets/images/captain.png"
 
 
 export default function Part3() {
@@ -16,6 +16,9 @@ export default function Part3() {
             </div>
 
             {/* Populer Limanlar */}
+            <div className="part3-main flex-center">
+            <div className="popular-ports"><h1>Popüler Limanlar</h1></div>
+            </div>
         </div>
     )
 

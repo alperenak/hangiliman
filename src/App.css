@@ -227,8 +227,16 @@ flex-dir-col {
 .background-div img {
   width: 100%;
 }
-
-
+.part3-main{
+  width: 100%;
+  height: 100vh;
+}
+.popular-ports{
+  z-index: 2;
+}
+.popular-ports h1{
+color:white
+}
 /******* media queries *******/
 
 @media only screen and (max-width: 800px) {
