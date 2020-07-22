@@ -177,6 +177,55 @@ header {
 .anchor-icon-div img {
   position: absolute;
   bottom: 1rem;
+  cursor: pointer;
+}
+
+.anchor-icon-div img:hover {
+  -webkit-animation: shake 4s linear infinite;
+  -moz-animation: shake 4s linear infinite;
+  animation: shake 1s ease-in infinite;
+}
+
+@-moz-keyframes shake {
+  0% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(20deg);
+  }
+  50% {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(20deg)
+  }
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(20deg);
+  }
+  50% {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(20deg)
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(20deg);
+  }
+  50% {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(20deg)
+  }
 }
 
 .what-is-hangiliman {
@@ -224,6 +273,7 @@ header {
 
 .background-div {
   position: absolute;
+  z-index: -1;
   width: 100%;
 }
 
@@ -233,14 +283,13 @@ header {
 
 .part3-main {
   width: 100%;
-  height: 100vh;
+  height: 1400px;
 }
 
 .popular-ports {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 45rem;
   z-index: 2;
 }
 
@@ -403,6 +452,29 @@ header {
   -webkit-box-shadow: 0px 8px 31px -3px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 0px 8px 31px -3px rgba(0, 0, 0, 0.23);
   box-shadow: 0px 8px 31px -3px rgba(0, 0, 0, 0.23);
+}
+
+.part4 {
+  height: 150vh;
+  width: 100%;
+}
+
+.contact-title h1 {
+  font-weight: 600;
+  color: #2B2B2B;
+}
+
+.contact-paragraph {
+  font-weight: medium;
+  color: #727272;
+}
+
+.contact-phone-input {
+  position: relative;
+}
+
+.contact-phone-input img {
+  position: absolute;
 }
 
 /******* media queries *******/
