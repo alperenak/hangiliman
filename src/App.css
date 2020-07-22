@@ -608,6 +608,11 @@ input {
 .social-links img{
   cursor: pointer;
 }
+.footer-logo{
+  position: absolute;
+  left: 2rem;
+  bottom:2rem
+}
 /******* media queries *******/
 
 @media only screen and (max-width: 800px) {

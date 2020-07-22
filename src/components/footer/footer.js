@@ -6,6 +6,7 @@ import Instagram from "../../assets/svg/instagram.svg"
 import Twitter from "../../assets/svg/twitter.svg"
 import Phone from "../../assets/svg/phoneFooter.svg"
 import Mail from "../../assets/svg/mail.svg"
+import Logo from "../../assets/images/logo.png"
 
 export default function Footer() {
     return (
@@ -18,6 +19,9 @@ export default function Footer() {
             {/* footer main */}
 
             <div className="footer-main  flex-center">
+
+         
+                {/* footer container */}
 
                 <div className="footer-container">
 
@@ -51,7 +55,15 @@ export default function Footer() {
                 </div>
 
             </div>
+
+                {/* footer copyright */}
+
             <div className="footer-copyright flex-center"><a>hangiliman</a> • Tüm hakları saklıdır 2020 ©</div>
+            
+                   {/* footer logo */}
+
+                   <div className="footer-logo"> <img width="200" src={Logo} /></div>
+
         </div>
     )
 }
