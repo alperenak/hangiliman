@@ -567,12 +567,16 @@ input {
 .footer-copyright a {
   font-weight: bold;
 }
+.footer-container{
+  display: flex;
+  align-items: center;
+  width: 900px;
+  justify-content: space-between;
+}
 .footer-titles-card {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 10rem;
 }
 
 .footer-titles {

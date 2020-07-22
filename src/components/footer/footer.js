@@ -17,20 +17,23 @@ export default function Footer() {
 
             {/* footer main */}
 
-            <div className="footer-main">
+            <div className="footer-main  flex-center">
 
-                {/* footer title Hangi Liman */}
+                <div className="footer-container">
 
-                <FooterTitle title={"Hangi Liman"} subtitles={["Hakkında", "Sitemap", "Üyelikler", "Ürün Hizmetleri"]} />
+                    {/* footer title Hangi Liman */}
 
-                {/* footer title Şirket */}
+                    <FooterTitle title={"Hangi Liman"} subtitles={["Hakkında", "Sitemap", "Üyelikler", "Ürün Hizmetleri"]} />
 
-                <FooterTitle title={"Şirket"} subtitles={["Hakkında", "Bizimle Çalış", "Website", "Marka"]} />
+                    {/* footer title Şirket */}
 
-                {/* footer title Politika */}
+                    <FooterTitle title={"Şirket"} subtitles={["Hakkında", "Bizimle Çalış", "Website", "Marka"]} />
 
-                <FooterTitle title={"Politika"} subtitles={["Gizlilik ve Güvenlik", "Politikalar", "Şartlar", "Lisanslama"]} />
+                    {/* footer title Politika */}
 
+                    <FooterTitle title={"Politika"} subtitles={["Gizlilik ve Güvenlik", "Politikalar", "Şartlar", "Lisanslama"]} />
+
+                </div>
             </div>
 
             {/* footer social platforms */}
