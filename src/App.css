@@ -248,9 +248,11 @@ header {
   font-weight: 600;
   color: white
 }
+
 .popular-ports a {
-font-weight: 900;
+  font-weight: 900;
 }
+
 .port-cards-container {
   display: flex;
   justify-content: space-around;
@@ -266,6 +268,12 @@ font-weight: 900;
   align-items: flex-start;
   width: 20rem;
   height: 25.5rem;
+  transition: ease-out 0.2s;
+  cursor: pointer;
+}
+
+.other-ports:hover {
+  transform: scale(1.02);
 }
 
 .first-port {
@@ -274,8 +282,14 @@ font-weight: 900;
   justify-content: flex-end;
   align-items: flex-start;
   width: 20rem;
+  cursor: pointer;
   height: 25.5rem;
+  transition: ease-out 0.2s;
   margin-bottom: 5rem;
+}
+
+.first-port:hover {
+  transform: scale(1.02)
 }
 
 .port-image {
@@ -386,9 +400,9 @@ font-weight: 900;
 }
 
 .more-ports-button:hover {
-  -webkit-box-shadow: 0px 8px 31px -3px rgba(0,0,0,0.23);
-  -moz-box-shadow: 0px 8px 31px -3px rgba(0,0,0,0.23);
-  box-shadow: 0px 8px 31px -3px rgba(0,0,0,0.23);
+  -webkit-box-shadow: 0px 8px 31px -3px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0px 8px 31px -3px rgba(0, 0, 0, 0.23);
+  box-shadow: 0px 8px 31px -3px rgba(0, 0, 0, 0.23);
 }
 
 /******* media queries *******/
