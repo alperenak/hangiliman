@@ -240,14 +240,17 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30rem;
+  margin-top: 35rem;
   z-index: 2;
 }
 
 .popular-ports h1 {
+  font-weight: 600;
   color: white
 }
-
+.popular-ports a {
+font-weight: 900;
+}
 .port-cards-container {
   display: flex;
   justify-content: space-around;

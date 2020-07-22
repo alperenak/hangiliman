@@ -18,7 +18,7 @@ export default function Part3() {
 
             {/* Populer Limanlar */}
             <div className="part3-main flex-center">
-                <div className="popular-ports flex-dir-col"><h1>Popüler Limanlar</h1>
+                <div className="popular-ports flex-dir-col"><h1><a>Popüler</a> Limanlar</h1>
                     {/* Liman cards */}
                     <PortCard />
                     <div className="more-ports-button flex-center">Daha fazla</div>
