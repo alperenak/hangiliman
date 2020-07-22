@@ -311,9 +311,11 @@ header {
   line-height: 0px;
   opacity: 0.85;
 }
-.post-location img{
+
+.post-location img {
   margin-right: 0.1rem;
 }
+
 .port-name {
   font-weight: 600;
   color: white;
@@ -365,6 +367,25 @@ header {
 
 .mb-5 {
   margin-bottom: 5rem;
+}
+
+.more-ports-button {
+  display: flex;
+  color: black;
+  width: 12rem;
+  height: 3.5rem;
+  cursor: pointer;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  z-index: 55;
+  transition: 0.5s;
+}
+
+.more-ports-button:hover {
+  -webkit-box-shadow: 0px 8px 31px -3px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0px 8px 31px -3px rgba(0,0,0,0.23);
+  box-shadow: 0px 8px 31px -3px rgba(0,0,0,0.23);
 }
 
 /******* media queries *******/
