@@ -34,7 +34,7 @@ header {
   align-items: center;
 }
 
-flex-dir-col {
+.flex-dir-col {
   flex-direction: column;
 }
 
@@ -209,16 +209,19 @@ flex-dir-col {
 .part3 {
   position: relative;
 }
-.captain-ship{
+
+.captain-ship {
   position: absolute;
   z-index: 1;
   width: 25rem;
 }
-.captain-ship img{
+
+.captain-ship img {
   position: absolute;
   z-index: 1;
   width: 100%;
 }
+
 .background-div {
   position: absolute;
   width: 100%;
@@ -227,16 +230,143 @@ flex-dir-col {
 .background-div img {
   width: 100%;
 }
-.part3-main{
+
+.part3-main {
   width: 100%;
   height: 100vh;
 }
-.popular-ports{
+
+.popular-ports {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30rem;
   z-index: 2;
 }
-.popular-ports h1{
-color:white
+
+.popular-ports h1 {
+  color: white
 }
+
+.port-cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 4rem;
+  width: 65rem;
+}
+
+.other-ports {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 20rem;
+  height: 25.5rem;
+}
+
+.first-port {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 20rem;
+  height: 25.5rem;
+  margin-bottom: 5rem;
+}
+
+.port-image {
+  width: 20rem;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  border-radius: 8px;
+  height: 25.5rem;
+}
+
+.port-image img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.port-image-filter {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  border-radius: 8px;
+  background: linear-gradient(178.07deg, #FFFFFF 2.08%, #000000 68.44%);
+  opacity: 0.48;
+}
+
+.port-order {
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 56px;
+  opacity: 0.53;
+}
+
+.post-location {
+  color: white;
+  font-size: 14px;
+  line-height: 0px;
+  opacity: 0.85;
+}
+.post-location img{
+  margin-right: 0.1rem;
+}
+.port-name {
+  font-weight: 600;
+  color: white;
+  z-index: 1;
+  font-size: 2rem;
+}
+
+.port-description {
+  color: white;
+  z-index: 1;
+  width: 70%;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.ml-3 {
+  margin-left: 3rem;
+}
+
+.ml-4 {
+  margin-left: 4rem;
+}
+
+.ml-5 {
+  margin-left: 5rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
 /******* media queries *******/
 
 @media only screen and (max-width: 800px) {
