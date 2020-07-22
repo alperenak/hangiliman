@@ -5,8 +5,8 @@ export default function Part2() {
 
 
     return (
-        <main className="part2 fit">
-            
+        <main id="part2" className="part2 fit">
+
             {/* What is HangiLiman */}
 
             <div className="what-is-hangiliman">

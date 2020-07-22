@@ -49,7 +49,7 @@ export default function Home() {
             {/* anchor icon */}
 
             <div className="anchor-icon-div flex-center" >
-                <img src={Anchor} />
+                <a href="#part2"><img src={Anchor} /></a>
             </div>
         </header>
     )
