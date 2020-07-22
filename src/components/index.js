@@ -7,7 +7,7 @@ import Footer from "./footer/footer"
 
 export default function Index() {
     return (
-        <div className="container">
+        <div id="container" className="container">
             <Home />
             <Part2 />
             <Part3 />
