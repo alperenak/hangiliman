@@ -27,7 +27,7 @@ export default function Footer() {
 
                     {/* footer title Hangi Liman */}
 
-                    <FooterTitle title={"Hangi Liman"} subtitles={["Hakkında", "Sitemap", "Üyelikler", "Ürün Hizmetleri"]} />
+                    <FooterTitle title={"Hangiliman"} subtitles={["Hakkında", "Sitemap", "Üyelikler", "Ürün Hizmetleri"]} />
 
                     {/* footer title Şirket */}
 
@@ -59,7 +59,7 @@ export default function Footer() {
                 {/* footer copyright */}
 
             <div className="footer-copyright flex-center"><a>hangiliman</a> • Tüm hakları saklıdır 2020 ©</div>
-            
+
                    {/* footer logo */}
 
                    <div className="footer-logo"> <img width="200" src={Logo} /></div>
