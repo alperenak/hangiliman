@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* All screen 100% scale */
+
 html, body, #root {
   height: 100%;
   width: 100%;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
+
+/* General reset */
 
 * {
   padding: 0;
@@ -22,6 +26,8 @@ header {
   width: 100%;
 }
 
+/* No dragable image */
+
 img {
   -webkit-user-drag: none;
   -khtml-user-drag: none;
@@ -33,6 +39,15 @@ img {
 input {
   font-family: 'Poppins', sans-serif;
 }
+
+/* make width and height % */
+
+.fit {
+  height: 100%;
+  width: 100%;
+}
+
+/* Main container */
 
 .container {
   width: 100%;
@@ -52,6 +67,10 @@ input {
   flex-direction: column;
 }
 
+/******** Home ********/
+
+/*** background ***/
+
 .header-img {
   position: absolute;
   z-index: -55;
@@ -66,11 +85,7 @@ input {
   width: 100%;
 }
 
-.logo {
-  position: absolute;
-  left: 25px;
-  top: 25px;
-}
+/***Background filter***/
 
 .header-img-filter {
   position: absolute;
@@ -81,15 +96,22 @@ input {
   opacity: 0.45;
 }
 
-.fit {
-  height: 100%;
-  width: 100%;
+/***Home logo***/
+
+.logo {
+  position: absolute;
+  left: 25px;
+  top: 25px;
 }
+
+/***Home Titles div***/
 
 .hero-title {
   z-index: 55;
   padding: 14rem 0px 0px 7rem;
 }
+
+/***Eşsiz denizler... title***/
 
 .hero-title h1 {
   font-weight: 700;
@@ -97,11 +119,15 @@ input {
   color: white;
 }
 
+/* Eşsiz denizler "HANGİLİMAN"... text color */
+
 .hero-title a {
   font-weight: 700;
   font-size: 32px;
   color: #6C92FD;
 }
+
+/***Yat tekne bizi... title***/
 
 .hero-title p {
   font-weight: 300;
@@ -110,6 +136,8 @@ input {
   opacity: 0.7;
 }
 
+/* Home listing ships or what container */
+
 .listing-ships-container {
   display: flex;
   align-items: center;
@@ -117,6 +145,8 @@ input {
   height: 150px;
   width: 75rem;
 }
+
+/* Selectboxes or buttons or whatever div */
 
 .select-boxes {
   display: flex;
@@ -131,6 +161,8 @@ input {
   z-index: 78;
 }
 
+/* Selectboxes bar style */
+
 .select-boxes-bar {
   display: flex;
   flex-direction: column;
@@ -140,6 +172,8 @@ input {
   background: #FFFFFF;
   box-shadow: 0px 2px 4px rgba(100, 100, 100, 0.498039);
 }
+
+/* box head part style */
 
 .box-head {
   display: flex;
@@ -152,6 +186,8 @@ input {
   background: rgba(196, 196, 196, 0.25);
 }
 
+/* box main part style */
+
 .box-main {
   flex: 7;
   display: flex;
@@ -161,14 +197,20 @@ input {
   position: relative;
 }
 
+/* for box head location icon */
+
 .location-icon {
   margin: 0px 0.4rem 0px 0.5rem;
 }
+
+/* for box head calendar icon */
 
 .calendar-icon {
   position: absolute;
   right: 1rem
 }
+
+/* result button content "Sonuçları listele" */
 
 .result-button {
   color: white;
@@ -180,13 +222,19 @@ input {
   transition: 0.3s;
 }
 
+/* Button when hover do change background color */
+
 .result-button:hover {
   background-color: #7597f7;
 }
 
+/* anchor icon div */
+
 .anchor-icon-div {
   width: 100%;
 }
+
+/* anchor icon page bottom center */
 
 .anchor-icon-div img {
   position: absolute;
@@ -194,11 +242,15 @@ input {
   cursor: pointer;
 }
 
+/* anchor icon whe hover do shake it */
+
 .anchor-icon-div img:hover {
   -webkit-animation: shake 4s linear infinite;
   -moz-animation: shake 4s linear infinite;
   animation: shake 1s ease-in infinite;
 }
+
+/****shake movement keyframes****/
 
 @-moz-keyframes shake {
   0% {
@@ -242,9 +294,9 @@ input {
   }
 }
 
-.what-is-hangiliman {
-  width: 600px;
-}
+/******** Part 2 ********/
+
+/** Part2 container**/
 
 .part2 {
   display: flex;
@@ -252,14 +304,26 @@ input {
   align-items: center;
 }
 
+/** Hangiliman Nedir? text div**/
+
+.what-is-hangiliman {
+  width: 600px;
+}
+
+/** Hangiliman Nedir? title**/
+
 .what-is-hangiliman h1 {
   font-weight: bold;
   margin: 2rem 0;
 }
 
+/** "Hangiliman"  (painting color ) nedir ? title**/
+
 .what-is-hangiliman a {
   color: #6C92FD;
 }
+
+/** Hangiliman paragraphs explain Hangiliman nedir?**/
 
 .what-is-hangiliman p {
   color: rgba(0, 0, 0, 0.6);
@@ -269,21 +333,13 @@ input {
 
 /******Part 3*******/
 
+/* Part 3 Container */
+
 .part3 {
   position: relative;
 }
 
-.captain-ship {
-  position: absolute;
-  z-index: 1;
-  width: 25rem;
-}
-
-.captain-ship img {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-}
+/* Part 3 background div */
 
 .background-div {
   position: absolute;
@@ -291,15 +347,37 @@ input {
   min-width: 1500px;
 }
 
+/* Part 3 background img */
+
 .background-div img {
   width: 100%;
   min-height: 1290px;
 }
 
+/* Captain in ship illustiration image div */
+
+.captain-ship {
+  position: absolute;
+  z-index: 1;
+  width: 25rem;
+}
+
+/* Captain in ship illustiration image img */
+
+.captain-ship img {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+/* Part 3 Main */
+
 .part3-main {
   width: 100%;
   height: 1200px;
 }
+
+/* Popular port title div */
 
 .popular-ports {
   display: flex;
@@ -308,14 +386,20 @@ input {
   z-index: 2;
 }
 
+/* Popular port title h1 */
+
 .popular-ports h1 {
   font-weight: 600;
   color: white
 }
 
+/* "Popular" (black font) port title */
+
 .popular-ports a {
   font-weight: 900;
 }
+
+/* Popular port card container */
 
 .port-cards-container {
   display: flex;
@@ -324,6 +408,8 @@ input {
   margin-top: 4rem;
   width: 65rem;
 }
+
+/* 2nd or 3rd port card */
 
 .other-ports {
   display: flex;
@@ -336,9 +422,13 @@ input {
   cursor: pointer;
 }
 
+/* 2nd or 3rd port card  when hover do scale grow*/
+
 .other-ports:hover {
   transform: scale(1.02);
 }
+
+/* 1st port card */
 
 .first-port {
   display: flex;
@@ -352,9 +442,13 @@ input {
   margin-bottom: 5rem;
 }
 
+/* 1st port card when hover do scale grow */
+
 .first-port:hover {
   transform: scale(1.02)
 }
+
+/* Port card background div */
 
 .port-image {
   width: 20rem;
@@ -365,10 +459,14 @@ input {
   height: 25.5rem;
 }
 
+/* Port card background img */
+
 .port-image img {
   border-radius: 8px;
   width: 100%;
 }
+
+/* Port card background filter */
 
 .port-image-filter {
   width: 100%;
@@ -379,6 +477,8 @@ input {
   opacity: 0.48;
 }
 
+/* Port order like 1st, 2nd, 3rd, */
+
 .port-order {
   font-weight: 600;
   color: #FFFFFF;
@@ -386,16 +486,22 @@ input {
   opacity: 0.53;
 }
 
-.post-location {
+/* Port location name*/
+
+.port-location {
   color: white;
   font-size: 14px;
   line-height: 0px;
   opacity: 0.85;
 }
 
-.post-location img {
+/* Port location icon*/
+
+.port-location img {
   margin-right: 0.1rem;
 }
+
+/* port name */
 
 .port-name {
   font-weight: 600;
@@ -404,11 +510,16 @@ input {
   font-size: 2rem;
 }
 
+/* Port description */
+
 .port-description {
   color: white;
   z-index: 1;
   width: 70%;
 }
+
+
+/******Margins******/
 
 .ml-1 {
   margin-left: 1rem;
@@ -450,6 +561,8 @@ input {
   margin-bottom: 5rem;
 }
 
+/* Daha fazla button style */
+
 .more-ports-button {
   display: flex;
   color: black;
@@ -463,16 +576,25 @@ input {
   transition: 0.5s;
 }
 
+/* Daha fazla button when hover do shadow */
+
 .more-ports-button:hover {
   -webkit-box-shadow: 0px 8px 31px -3px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 0px 8px 31px -3px rgba(0, 0, 0, 0.23);
   box-shadow: 0px 8px 31px -3px rgba(0, 0, 0, 0.23);
 }
 
+/******Part 4*******/
+
+
+/* part 4 container */
+
 .part4 {
   height: 120vh;
   width: 100%;
 }
+
+/* Yüzdün yüzdün... contact title */
 
 .contact-title h1 {
   font-weight: 600;
@@ -483,12 +605,18 @@ input {
   color: #2B2B2B;
 }
 
+/* Sana ulaşabilmemiz... contact text */
+
+
 .contact-paragraph {
   font-weight: 500;
   font-size: 18px;
   padding: 1rem 0;
   color: #727272;
 }
+
+/* contact input div */
+
 
 .contact-phone-input {
   display: flex;
@@ -499,11 +627,15 @@ input {
   width: 27rem;
 }
 
+/* contact phone icon */
+
 .contact-phone-input img {
   position: absolute;
   left: 0.5rem;
   z-index: 1;
 }
+
+/* contact input */
 
 .contact-phone-input input {
   width: 15rem;
@@ -514,6 +646,8 @@ input {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.17);
   position: absolute;
 }
+
+/* contact submit button */
 
 .contact-form-submit {
   width: 10rem;
@@ -527,9 +661,15 @@ input {
   background-color: #6C92FD;
 }
 
+/* Contact submit button when hover do change background color */
+
 .contact-form-submit:hover {
   background-color: #7597f7;
 }
+
+/******Footer 4*******/
+
+/* footer */
 
 .footer {
   position: relative;
@@ -537,11 +677,15 @@ input {
   height: 600px;
 }
 
+/* footer background img */
+
 .footer-background img {
   position: absolute;
   height: 100%;
   z-index: -1;
 }
+
+/* footer main  */
 
 .footer-main {
   padding-top: 10rem;
@@ -550,10 +694,24 @@ input {
   width: 100%;
 }
 
+/* footer container */
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  width: 900px;
+  justify-content: space-between;
+}
+
+
+/* footer social platforms div */
+
 .footer-social-platforms {
   height: 50px;
   width: 100%;
 }
+
+/* footer copyright div */
 
 .footer-copyright {
   height: 50px;
@@ -564,20 +722,21 @@ input {
   font-weight: 400;
 }
 
+/* footer copyright in "hangiliman" font bold */
+
 .footer-copyright a {
   font-weight: bold;
 }
-.footer-container{
-  display: flex;
-  align-items: center;
-  width: 900px;
-  justify-content: space-between;
-}
+
+/* footer titles card */
+
 .footer-titles-card {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
+
+/* footer titles style */
 
 .footer-titles {
   color: white;
@@ -586,9 +745,15 @@ input {
   font-weight: 600;
   padding-bottom: 1rem;
 }
-.footer-titles:hover{
+
+/* footer titles when hover do opacity down */
+
+.footer-titles:hover {
   opacity: 0.8;
 }
+
+/* footer subtitles */
+
 .footer-subtitles {
   font-weight: 400;
   color: white;
@@ -596,23 +761,37 @@ input {
   font-size: 18px;
   line-height: 36px;
 }
-.footer-subtitles:hover{
+
+/* footer subtitles when hover do opacity down */
+
+
+.footer-subtitles:hover {
   opacity: 0.8;
 }
-.social-links{
+
+/* social links div */
+
+.social-links {
   width: 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.social-links img{
+
+/* social links icons */
+
+.social-links img {
   cursor: pointer;
 }
-.footer-logo{
+
+/* footer logo  */
+
+.footer-logo {
   position: absolute;
   left: 2rem;
-  bottom:2rem
+  bottom: 2rem
 }
+
 /******* media queries *******/
 
 @media only screen and (max-width: 800px) {

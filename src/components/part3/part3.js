@@ -5,6 +5,9 @@ import PortCard from "./portCard"
 
 
 export default function Part3() {
+
+    // if we are have data from database. I gonna use this.
+
     const portData = useState([])
 
     useEffect(() => {
@@ -40,7 +43,9 @@ export default function Part3() {
 
                     {/* Liman cards */}
 
-                    <PortCard />
+                    {/* The component have prop (name:data) but we can't use it because we haven't any data from database yet. */}
+
+                    <PortCard  />
 
                     <div className="more-ports-button flex-center">Daha fazla</div>
                 </div>

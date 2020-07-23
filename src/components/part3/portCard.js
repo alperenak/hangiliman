@@ -58,7 +58,7 @@ function RenderCards({ data }) {
 
                 {/* port location */}
 
-                <div className="post-location flex-center ml-1"><img src={LocationIcon} />{Data[1].location}</div>
+                <div className="port-location flex-center ml-1"><img src={LocationIcon} />{Data[1].location}</div>
 
                 {/* port name */}
 
