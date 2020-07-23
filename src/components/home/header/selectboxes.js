@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, Component } from "react"
 import Location from "../../../assets/svg/location.svg"
 import Calendar from "../../../assets/svg/calendar.svg"
 import Rudder from "../../../assets/svg/rudder.svg"
@@ -7,11 +7,17 @@ import Dropdown from "../../../assets/svg/dropdown.svg"
 
 export default function SelectBoxesBar({ type }) {
     return (
+
+        // get type homejs and I give prop of TypeButton Component
+
         <TypeButton typeButton={type} />
     )
 }
 
 function TypeButton({ typeButton }) {
+
+    // if type button Location render some
+
     if (typeButton === "location") {
 
         return (
@@ -21,6 +27,9 @@ function TypeButton({ typeButton }) {
             </div>
         )
     }
+
+    // if type button Rudder  render some
+
     else if (typeButton === "rudder") {
         return (
             <div className="select-boxes-bar">
@@ -29,6 +38,8 @@ function TypeButton({ typeButton }) {
             </div>
         )
     }
+
+    // if type button Calendar render some
 
     else if (typeButton === "calendar") {
         return (

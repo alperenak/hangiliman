@@ -22,7 +22,7 @@ export default function Part2() {
 
             </div>
 
-            {/* Ship İllustiration */}
+            {/* Ship Illustiration */}
 
             <div className="ship-images"><img width="507" height="500" src={Ship} /></div>
 

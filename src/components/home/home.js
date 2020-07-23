@@ -24,7 +24,13 @@ export default function Home() {
             {/* titles */}
 
             <div className="hero-title">
+
+                {/* Eşsiz denizler... Titles */}
+
                 <h1>Eşsiz denizlere <a>hangiliman</a>'dan çıkacaksınız?</h1>
+
+                {/* Yat,tekne... Titles */}
+
                 <p>Yat, tekne bizi bekle.</p>
             </div>
             <div className="listing-ships-container">
@@ -41,7 +47,7 @@ export default function Home() {
 
                 <div className="result-button flex-center">
                     Sonuçları Listele
-         </div>
+                 </div>
 
 
             </div>

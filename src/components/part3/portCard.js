@@ -3,11 +3,24 @@ import FirstPort from "../../assets/images/first.png"
 import SecondPort from "../../assets/images/second.png"
 import ThirdPort from "../../assets/images/third.png"
 import LocationIcon from "../../assets/svg/cardPortLocation.svg"
+import Part3 from "./part3"
+
+/**its my fake data.**/ 
+
+// order:sıra,
+// location:konum,
+// port:liman adı,
+// description:açıklama
+
+
 export const fakeData = [
     { order: 1, location: "Çeşme, İzmir", port: "Kaya Limanı", description: "2020 Yılında en çok tekne kiralanan 1. liman oldu." },
     { order: 2, location: "Manavgat, Antalya", port: "Irmak Limanı", description: "2020 Yılında en çok tekne kiralanan 2. liman oldu." },
     { order: 3, location: "San Francisco, ABD", port: "SK Limanı", description: "2020 Yılında en çok tekne kiralanan 3. liman oldu." }
 ]
+
+// we have data prop from Part3.js
+
 export default function PortCard({ data = fakeData }) {
 
     return (
@@ -18,8 +31,12 @@ export default function PortCard({ data = fakeData }) {
 
 }
 function RenderCards({ data }) {
+
+    // i gonna sort data by data.order
+
     const Data = data.sort((a, b) => { return a.order - b.order })
-    console.log(Data)
+
+
     return (
         <div className="port-cards-container">
 

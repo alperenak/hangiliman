@@ -8,11 +8,26 @@ import Footer from "./footer/footer"
 export default function Index() {
     return (
         <div id="container" className="container">
+
+            {/* Home rendered */}
+
             <Home />
+
+            {/* Part 2 rendered */}
+
             <Part2 />
+
+            {/* Part3 rendered */}
+
             <Part3 />
+
+            {/* Part 4 rendered */}
+
             <Part4 />
-            <Footer/>
+
+            {/* Footer rendered */}
+
+            <Footer />
         </div>
     )
 }

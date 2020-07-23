@@ -6,13 +6,17 @@ import PortCard from "./portCard"
 
 export default function Part3() {
     const portData = useState([])
-  
-    useEffect(() => {
-    const container = document.getElementById("container")
-// const part3
-        container.addEventListener("scroll", ()=>{
 
-        });
+    useEffect(() => {
+
+        // TODO
+        // ---> onscroll olduğunda kaptanlı gemi hareket edecek
+
+
+        // const container = document.getElementById("container")
+        // container.addEventListener("scroll", () => {
+
+        // });
     }, [])
 
 

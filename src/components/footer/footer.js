@@ -47,10 +47,25 @@ export default function Footer() {
                 {/* Footer social links */}
 
                 <div className="social-links">
+
+                    {/* Mail icon */}
+
                     <img src={Mail} />
+
+                    {/* Phone icon */}
+
                     <img src={Phone} />
+
+                    {/* facebook icon */}
+
                     <img src={Facebook} />
+
+                    {/* instagram icon */}
+
                     <img src={Instagram} />
+
+                    {/* twitter icon */}
+                    
                     <img src={Twitter} />
                 </div>
 
