@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import SelectBoxesBar from "./header/selectboxes"
 import HeaderPNG from "../../assets/images/header1.png"
 import Logo from "../../assets/images/logo.png"
@@ -6,6 +6,7 @@ import Anchor from "../../assets/svg/anchor.svg"
 import "../../App.css"
 
 export default function Home() {
+
 
     return (
         <header>
@@ -47,7 +48,8 @@ export default function Home() {
 
                 <div className="result-button flex-center">
                     Sonuçları Listele
-                 </div>
+            
+                </div>
 
 
             </div>

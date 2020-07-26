@@ -143,7 +143,8 @@ input {
   align-items: center;
   justify-content: space-between;
   height: 150px;
-  width: 75rem;
+  max-width: 75rem;
+  width: 100%
 }
 
 /* Selectboxes or buttons or whatever div */
@@ -153,7 +154,8 @@ input {
   justify-content: space-around;
   align-items: center;
   margin: 0rem 0px 0px 7rem;
-  width: 49rem;
+  max-width: 49rem;
+  width: 95%;
   height: 7rem;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.4);
@@ -231,13 +233,19 @@ input {
 /* anchor icon div */
 
 .anchor-icon-div {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  height: 120px;
+  bottom: 0;
+
 }
 
 /* anchor icon page bottom center */
 
 .anchor-icon-div img {
-  position: absolute;
   bottom: 1rem;
   cursor: pointer;
 }
@@ -518,7 +526,6 @@ input {
   width: 70%;
 }
 
-
 /******Margins******/
 
 .ml-1 {
@@ -586,7 +593,6 @@ input {
 
 /******Part 4*******/
 
-
 /* part 4 container */
 
 .part4 {
@@ -607,7 +613,6 @@ input {
 
 /* Sana ulaşabilmemiz... contact text */
 
-
 .contact-paragraph {
   font-weight: 500;
   font-size: 18px;
@@ -616,7 +621,6 @@ input {
 }
 
 /* contact input div */
-
 
 .contact-phone-input {
   display: flex;
@@ -703,7 +707,6 @@ input {
   justify-content: space-between;
 }
 
-
 /* footer social platforms div */
 
 .footer-social-platforms {
@@ -764,7 +767,6 @@ input {
 
 /* footer subtitles when hover do opacity down */
 
-
 .footer-subtitles:hover {
   opacity: 0.8;
 }
@@ -794,7 +796,109 @@ input {
 
 /******* media queries *******/
 
+@media only screen and (max-width:1250px) {
+  .select-boxes {}
+  .listing-ships-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 20rem;
+  }
+  .result-button {
+    margin: 2rem 0 0 42rem;
+  }
+}
+
+@media only screen and (max-width:950px) {
+  .select-boxes {
+    margin: 0;
+  }
+  #part2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150vh;
+  }
+  #part2-paragpaph {
+    order: 2
+  }
+  #part2-img {
+    order: 1
+  }
+  #part2-img img {
+    width: 450px;
+    height: 450px;
+  }
+  .what-is-hangiliman {
+    max-width: 600px;
+    width: 80%;
+  }
+  /** Hangiliman Nedir? title**/
+  .what-is-hangiliman h1 {
+    font-weight: bold;
+    font-size: 26px;
+    margin: 2rem 0;
+  }
+  .what-is-hangiliman p {}
+  .listing-ships-container {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20rem;
+  }
+  .result-button {
+    position: absolute;
+    top: 7rem;
+    right: 2.5%;
+  }
+}
+
 @media only screen and (max-width: 800px) {
+  .listing-ships-container {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+  }
+  .hero-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10rem 0px 0px 0rem;
+  }
+  #part2-img img {
+    width: 350px;
+    height: 350px;
+  }
+  .hero-title h1 {
+    width: 80%;
+    text-align: center;
+  }
+  .result-button {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 2rem 0;
+  }
+  .select-boxes {
+    width: 300px
+  }
+  .select-boxes-bar {
+    width: 80%;
+  }
+  #part2 {
+    flex-direction: column;
+    height: 1400px;
+  }
+  #rudder-box {
+    display: none;
+  }
+  #calendar-box {
+    display: none;
+  }
   .header-img img {
     width: 100%;
     margin-left: -14rem;
@@ -807,10 +911,24 @@ input {
 @media only screen and (max-width: 600px) {
   .header-img img {
     width: 100%;
-    margin-left: -25rem;
+    height:125vh ;
+    margin-left: -40%;
   }
+  .header-img {
+    height: 125vh;
+  }
+  header {
+    height: 125vh;
+  }
+
   .background-div {
     margin-left: -25rem;
+  }
+  #part2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200vh;
   }
 }
 

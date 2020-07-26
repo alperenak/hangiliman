@@ -9,7 +9,7 @@ export default function Part2() {
 
             {/* What is HangiLiman */}
 
-            <div className="what-is-hangiliman">
+            <div id="part2-paragpaph" className="what-is-hangiliman">
                 <h1><a>HANGİLİMAN</a> Nedir?</h1>
                 <p>
                     Though, the objectives of discussions of the referential arguments can be neglected in most cases, it should be realized that the matter of the formal action is of a great interest.
@@ -24,7 +24,7 @@ export default function Part2() {
 
             {/* Ship Illustiration */}
 
-            <div className="ship-images"><img width="507" height="500" src={Ship} /></div>
+            <div id="part2-img" className="ship-images"><img width="507" height="500" src={Ship} /></div>
 
         </main>
     )
