@@ -1,5 +1,5 @@
 import React from "react"
-import { Location } from "../../components/icons/index"
+import { CardPortLocation} from "../../components/icons/index"
 import { FakeData } from "./fakeData/fakeData"
 import { ConverData } from "./convertData"
 
@@ -29,7 +29,7 @@ export default function RenderCard({ data = FakeData }) {
 
                         {/* port location */}
 
-                        <div className="port-location flex-center ml-1"><Location className="port-location-img" />{item.location}</div>
+                        <div className="port-location flex-center ml-1"><CardPortLocation className="port-location-img" />{item.location}</div>
 
                         {/* port name */}
 

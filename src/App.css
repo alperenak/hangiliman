@@ -203,6 +203,8 @@ input {
 
 .location-icon {
   margin: 0px 0.4rem 0px 0.5rem;
+  width: 18px;
+  height: 17px;
 }
 
 /* for box head calendar icon */
@@ -246,6 +248,8 @@ input {
 
 .anchor-icon-div-img {
   bottom: 1rem;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
 }
 
@@ -506,6 +510,10 @@ input {
 
 .port-location-img {
   margin-right: 0.1rem;
+  color:white;
+  width: 18px;
+  height: 18px;
+  fill:"#fff"
 }
 
 /* port name */

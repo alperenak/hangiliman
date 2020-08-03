@@ -2,7 +2,7 @@ import * as React from "react";
 
 function SvgCardPortLocation(props) {
   return (
-    <svg width="1em" height="1em" viewBox="0 0 18 18" fill="none" {...props}>
+    <svg width="1em" height="1em" viewBox="0 0 18 18" fill="currentColor" {...props}>
       <g opacity={0.9}>
         <mask
           id="cardPortLocation_svg__a"
