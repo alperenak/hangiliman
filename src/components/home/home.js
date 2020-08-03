@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import SelectBoxesBar from "./header/selectboxes"
 import HeaderPNG from "../../assets/images/header1.png"
 import Logo from "../../assets/images/logo.png"
-import Anchor from "../../assets/svg/anchor.svg"
+import {Anchor} from "../../components/icons/index"
 import "../../App.css"
 
 export default function Home() {
@@ -57,7 +57,7 @@ export default function Home() {
             {/* anchor icon */}
 
             <div className="anchor-icon-div flex-center" >
-                <a href="#part2"><img src={Anchor} /></a>
+                <a href="#part2"><Anchor className="anchor-icon-div-img" /></a>
             </div>
         </header>
     )

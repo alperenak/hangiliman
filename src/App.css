@@ -240,19 +240,18 @@ input {
   width: 100%;
   height: 120px;
   bottom: 0;
-
 }
 
 /* anchor icon page bottom center */
 
-.anchor-icon-div img {
+.anchor-icon-div-img {
   bottom: 1rem;
   cursor: pointer;
 }
 
 /* anchor icon whe hover do shake it */
 
-.anchor-icon-div img:hover {
+.anchor-icon-div-img:hover {
   -webkit-animation: shake 4s linear infinite;
   -moz-animation: shake 4s linear infinite;
   animation: shake 1s ease-in infinite;
@@ -505,7 +504,7 @@ input {
 
 /* Port location icon*/
 
-.port-location img {
+.port-location-img {
   margin-right: 0.1rem;
 }
 
@@ -633,7 +632,7 @@ input {
 
 /* contact phone icon */
 
-.contact-phone-input img {
+.contact-phone-input-img {
   position: absolute;
   left: 0.5rem;
   z-index: 1;
@@ -782,7 +781,7 @@ input {
 
 /* social links icons */
 
-.social-links img {
+.social-links-img {
   cursor: pointer;
 }
 
@@ -808,7 +807,8 @@ input {
     margin: 2rem 0 0 42rem;
   }
 }
-@media only screen and (max-width:1080px){
+
+@media only screen and (max-width:1080px) {
   .captain-ship {
     position: absolute;
     z-index: 1;
@@ -819,6 +819,7 @@ input {
     padding-top: 7rem;
   }
 }
+
 @media only screen and (max-width:950px) {
   .select-boxes {
     margin: 0;
@@ -921,7 +922,7 @@ input {
 @media only screen and (max-width: 600px) {
   .header-img img {
     width: 100%;
-    height:125vh ;
+    height: 125vh;
     margin-left: -40%;
   }
   .header-img {
@@ -930,7 +931,6 @@ input {
   header {
     height: 125vh;
   }
-
   .background-div {
     margin-left: -25rem;
   }

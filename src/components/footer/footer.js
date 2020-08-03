@@ -1,11 +1,11 @@
 import React from "react"
 import FooterImage from "../../assets/images/footer.png"
 import FooterTitle from "./footerTitle"
-import Facebook from "../../assets/svg/facebook.svg"
-import Instagram from "../../assets/svg/instagram.svg"
-import Twitter from "../../assets/svg/twitter.svg"
-import Phone from "../../assets/svg/phoneFooter.svg"
-import Mail from "../../assets/svg/mail.svg"
+import { Facebook } from "../../components/icons/index"
+import { Instagram } from "../../components/icons/index"
+import { Twitter } from "../../components/icons/index"
+import { PhoneFooter } from "../../components/icons/index"
+import { Mail } from "../../components/icons/index"
 import Logo from "../../assets/images/logo.png"
 
 export default function Footer() {
@@ -20,7 +20,7 @@ export default function Footer() {
 
             <div className="footer-main  flex-center">
 
-         
+
                 {/* footer container */}
 
                 <div className="footer-container">
@@ -50,34 +50,34 @@ export default function Footer() {
 
                     {/* Mail icon */}
 
-                    <img src={Mail} />
+                    <Mail className="social-links-img" />
 
                     {/* Phone icon */}
 
-                    <img src={Phone} />
+                    <PhoneFooter className="social-links-img" />
 
                     {/* facebook icon */}
 
-                    <img src={Facebook} />
+                    <Facebook className="social-links-img" />
 
                     {/* instagram icon */}
 
-                    <img src={Instagram} />
+                    <Instagram className="social-links-img" />
 
                     {/* twitter icon */}
-                    
-                    <img src={Twitter} />
+
+                    <Twitter className="social-links-img" />
                 </div>
 
             </div>
 
-                {/* footer copyright */}
+            {/* footer copyright */}
 
             <div className="footer-copyright flex-center"><a>hangiliman</a> • Tüm hakları saklıdır 2020 ©</div>
 
-                   {/* footer logo */}
+            {/* footer logo */}
 
-                   <div className="footer-logo"> <img width="200" src={Logo} /></div>
+            <div className="footer-logo"> <img width="200" src={Logo} /></div>
 
         </div>
     )

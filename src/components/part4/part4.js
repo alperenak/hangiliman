@@ -1,5 +1,6 @@
 import React, { useState } from "react"
-import Phone from "../../assets/svg/phone.svg"
+import Phone from "../../components/icons/Phone"
+
 export default function Part4() {
     const [value, setValue] = useState("")
 
@@ -21,10 +22,10 @@ export default function Part4() {
             {/* Contact Form */}
 
             <div className="contact-phone-input">
-                
+
                 {/* Phone icon */}
 
-                <img src={Phone} />
+                <Phone className="contact-phone-input-img" />
 
                 {/* Input for Number */}
 
@@ -35,7 +36,7 @@ export default function Part4() {
                 <div onClick={() => onSubmit()} className="contact-form-submit flex-center">
                     Gönder
                 </div>
-                
+
             </div>
 
         </div>
