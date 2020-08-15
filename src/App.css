@@ -510,10 +510,10 @@ input {
 
 .port-location-img {
   margin-right: 0.1rem;
-  color:white;
+  color: white;
   width: 18px;
   height: 18px;
-  fill:"#fff"
+  fill: "#fff"
 }
 
 /* port name */
@@ -678,128 +678,15 @@ input {
   background-color: #7597f7;
 }
 
-/******Footer 4*******/
-
-/* footer */
-
-.footer {
-  position: relative;
-  display: flex;
-  height: 600px;
-}
-
-/* footer background img */
-
-.footer-background img {
-  position: absolute;
-  height: 100%;
-  z-index: -1;
-}
-
-/* footer main  */
-
-.footer-main {
-  padding-top: 10rem;
-  display: flex;
-  height: 500px;
-  width: 100%;
-}
-
-/* footer container */
-
-.footer-container {
-  display: flex;
-  align-items: center;
-  width: 900px;
-  justify-content: space-between;
-}
-
-/* footer social platforms div */
-
-.footer-social-platforms {
-  height: 50px;
-  width: 100%;
-}
-
-/* footer copyright div */
-
-.footer-copyright {
-  height: 50px;
-  margin-top: 1rem;
-  width: 100%;
-  opacity: 0.48;
-  color: white;
-  font-weight: 400;
-}
-
-/* footer copyright in "hangiliman" font bold */
-
-.footer-copyright a {
-  font-weight: bold;
-}
-
-/* footer titles card */
-
-.footer-titles-card {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-/* footer titles style */
-
-.footer-titles {
-  color: white;
-  cursor: pointer;
-  font-size: 25px;
-  font-weight: 600;
-  padding-bottom: 1rem;
-}
-
-/* footer titles when hover do opacity down */
-
-.footer-titles:hover {
-  opacity: 0.8;
-}
-
-/* footer subtitles */
-
-.footer-subtitles {
-  font-weight: 400;
-  color: white;
-  cursor: pointer;
-  font-size: 18px;
-  line-height: 36px;
-}
-
-/* footer subtitles when hover do opacity down */
-
-.footer-subtitles:hover {
-  opacity: 0.8;
-}
-
-/* social links div */
-
-.social-links {
-  width: 300px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 /* social links icons */
 
 .social-links-img {
   cursor: pointer;
+  width: 25px;
+  height: 25px;
 }
 
 /* footer logo  */
-
-.footer-logo {
-  position: absolute;
-  left: 2rem;
-  bottom: 2rem
-}
 
 /******* media queries *******/
 

@@ -1,16 +1,10 @@
-import * as React from "react";
+import * as React from 'react';
+import { StyledSocialLinks } from './style';
 
 function SvgFacebook(props) {
   return (
-    <svg width="1em" height="1em" viewBox="0 0 32 32" fill="none" {...props}>
-      <mask
-        id="facebook_svg__a"
-        maskUnits="userSpaceOnUse"
-        x={0}
-        y={0}
-        width={32}
-        height={32}
-      >
+    <StyledSocialLinks width="1em" height="1em" viewBox="0 0 32 32" fill="none" {...props}>
+      <mask id="facebook_svg__a" maskUnits="userSpaceOnUse" x={0} y={0} width={32} height={32}>
         <path fill="#fff" d="M0 0h32v32H0z" />
       </mask>
       <g mask="url(#facebook_svg__a)">
@@ -21,7 +15,7 @@ function SvgFacebook(props) {
           fill="#fff"
         />
       </g>
-    </svg>
+    </StyledSocialLinks>
   );
 }
 

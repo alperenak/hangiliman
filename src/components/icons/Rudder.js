@@ -1,17 +1,10 @@
-import * as React from "react";
-
+import * as React from 'react';
+import { StyledSelectBoxesIcon } from './style';
 function SvgRudder(props) {
   return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" {...props}>
+    <StyledSelectBoxesIcon width="1em" height="1em" viewBox="0 0 24 24" fill="none" {...props}>
       <g opacity={0.48}>
-        <mask
-          id="rudder_svg__a"
-          maskUnits="userSpaceOnUse"
-          x={0}
-          y={0}
-          width={24}
-          height={24}
-        >
+        <mask id="rudder_svg__a" maskUnits="userSpaceOnUse" x={0} y={0} width={24} height={24}>
           <path fill="#fff" d="M0 0h24v24H0z" />
         </mask>
         <g mask="url(#rudder_svg__a)">
@@ -23,7 +16,7 @@ function SvgRudder(props) {
           />
         </g>
       </g>
-    </svg>
+    </StyledSelectBoxesIcon>
   );
 }
 

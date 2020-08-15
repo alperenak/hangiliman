@@ -1,66 +1,80 @@
-import React, { useEffect, useState } from "react"
-import SelectBoxesBar from "./header/selectboxes"
-import HeaderPNG from "../../assets/images/header1.png"
-import Logo from "../../assets/images/logo.png"
-import {Anchor} from "../../components/icons/index"
-import "../../App.css"
+import React, { useEffect, useState } from 'react';
+import SelectBoxesBar from './header/selectboxes';
+import { Anchor } from '../../components/icons/index';
+import '../../App.css';
+import {
+  StyledHeader,
+  StyledHeaderImageFilter,
+  StyledHeaderBackground,
+  StyledHeaderBackgroundImage,
+  StyledLogo,
+  StyledLogoImage,
+  StyledHeroTitle,
+  StyledHeroTitleH1,
+  StyledHeroTitleHangiliman,
+  StyledHeroTitleYatTekne,
+  StyledListingShipsContainer,
+  StyledSelectBoxes,
+  StyledResultButton,
+  StyledAnchorIconDiv,
+  StyledHrefPart2,
+} from './homeStyle';
 
 export default function Home() {
+  return (
+    <StyledHeader>
+      {/* filter */}
 
+      <StyledHeaderImageFilter />
 
-    return (
-        <header>
-            {/* filter */}
+      {/* background */}
 
-            <div className="header-img-filter" />
+      <StyledHeaderBackground>
+        <StyledHeaderBackgroundImage />
+      </StyledHeaderBackground>
 
-            {/* background */}
+      {/* logo */}
 
-            <div className="header-img"> <img src={HeaderPNG} /></div>
+      <StyledLogo>
+        <StyledLogoImage />
+      </StyledLogo>
 
-            {/* logo */}
+      {/* titles */}
 
-            <div className="logo"> <img width="200" src={Logo} /></div>
+      <StyledHeroTitle>
+        {/* Eşsiz denizler... Titles */}
 
-            {/* titles */}
+        <StyledHeroTitleH1>
+          Eşsiz denizlere
+          <StyledHeroTitleHangiliman> hangiliman</StyledHeroTitleHangiliman>
+          'dan çıkacaksınız?
+        </StyledHeroTitleH1>
 
-            <div className="hero-title">
+        {/* Yat,tekne... Titles */}
 
-                {/* Eşsiz denizler... Titles */}
+        <StyledHeroTitleYatTekne>Yat, tekne bizi bekle.</StyledHeroTitleYatTekne>
+      </StyledHeroTitle>
+      <StyledListingShipsContainer>
+        {/* select boxes */}
 
-                <h1>Eşsiz denizlere <a>hangiliman</a>'dan çıkacaksınız?</h1>
+        <StyledSelectBoxes>
+          <SelectBoxesBar type="location" />
+          <SelectBoxesBar type="rudder" />
+          <SelectBoxesBar type="calendar" />
+        </StyledSelectBoxes>
 
-                {/* Yat,tekne... Titles */}
+        {/* result button */}
 
-                <p>Yat, tekne bizi bekle.</p>
-            </div>
-            <div className="listing-ships-container">
+        <StyledResultButton>Sonuçları Listele</StyledResultButton>
+      </StyledListingShipsContainer>
 
-                {/* select boxes */}
+      {/* anchor icon */}
 
-                <div className="select-boxes">
-                    <SelectBoxesBar type="location" />
-                    <SelectBoxesBar type="rudder" />
-                    <SelectBoxesBar type="calendar" />
-                </div>
-
-                {/* result button */}
-
-                <div className="result-button flex-center">
-                    Sonuçları Listele
-            
-                </div>
-
-
-            </div>
-
-            {/* anchor icon */}
-
-            <div className="anchor-icon-div flex-center" >
-                <a href="#part2"><Anchor className="anchor-icon-div-img" /></a>
-            </div>
-        </header>
-    )
-
-
+      <StyledAnchorIconDiv>
+        <StyledHrefPart2 href="#part2">
+          <Anchor />
+        </StyledHrefPart2>
+      </StyledAnchorIconDiv>
+    </StyledHeader>
+  );
 }
